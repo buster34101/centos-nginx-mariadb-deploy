@@ -2,7 +2,7 @@
 
 ## 📌 项目概述
 本项目在 VMware 虚拟机中基于 CentOS 8 操作系统，独立完成了 Nginx Web 服务器与 MariaDB 数据库的部署。通过配置 PHP-FPM 实现 Nginx 解析动态 PHP 页面，搭建了一个具备完整“增删查”功能的动态留言板网站。此外，结合 Shell 脚本与 crontab 实现了数据库的每日自动备份，完整实践了从系统初始化、服务搭建、应用联调到自动化运维的全流程。
-
+![留言板最终效果]（https://github.com/buster34101/centos-nginx-mariadb-deploy/blob/main/images/images/04-guestbook.png）
 ## 🏗️ 环境与架构
 - **操作系统**：CentOS 8（VMware 虚拟机，NAT 网络模式）
 - **Web 服务**：Nginx 1.14
