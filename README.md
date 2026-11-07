@@ -14,10 +14,8 @@
 1. **系统环境初始化**：配置阿里云 vault 源解决 CentOS 8 EOL 问题；临时关闭 SELinux 防止 Nginx 访问受限；配置 `firewalld` 放行 HTTP(80) 服务。
  ![Nginx 页面](images/images/01-nginx-page.png)  
 2. **Web 环境搭建**：通过 `yum` 安装 Nginx，替换默认静态页面，配置 Nginx 配置文件实现 `fastcgi_pass` 转发。
-   ![数据库查询](images/images/02-mariadb-select.png)
-
 3. **数据库部署**：安装并启动 MariaDB，设置 root 密码，创建 `webapp` 数据库及 `messages` 数据表，完成基础 SQL 增删改查验证。
-   
+   ![数据库查询](images/images/02-mariadb-select.png)
 4. **前后端联调**：编写 `index.php` 页面，实现 HTML 表单提交与 PHP 接收数据，通过 `mysqli_connect` 连接数据库，实现留言的写入与页面列表动态渲染。
  ![PHP 测试](images/images/03-phpinfo.png)
 ![留言板最终效果](images/images/04-guestbook.png)
